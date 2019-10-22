@@ -1,12 +1,23 @@
 <html>
 <script>
 JavaScript Calculator
-A=eval("First Operand");
-alert(A);
-B=prompt("Operator");
-alert(B);
-C= prompt("Second Operand");
-alert(C);
-
+	do{
+	operand1 = prompt("First Operand");
+	operator = Prompt("Operator");
+	operand2 = prompt("Second Operand");
+	result = prompt("Result");
+	if(operator == "+")
+		result = eval(operand1)+eval(operand2); 
+	else if(operator == "-")
+		result = eval(operand1) - eval(operand2);
+	else if(operator == "*")
+		result = eval(operand1) * eval(operand2);
+	else if(operator == "/")
+		result = eval(operand1) / eval(operand2);
+	else
+		alert("Input error!");
+		alert(result);
+		}	
+		while(confirm(Continue?"));
 </script>
 </html>
