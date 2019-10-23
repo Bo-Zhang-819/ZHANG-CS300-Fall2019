@@ -1,23 +1,21 @@
 <html>
+<h1>JavaScript Calculator</h1>
 <script>
-defaultStatus="JavaScript Calculator";
 	do{
 	operand1 = prompt("First Operand");
-	operator = Prompt("Operator");
+	operator = prompt("Operator");
 	operand2 = prompt("Second Operand");
-	result = prompt("Result");
+	result = 0;
 	if(operator == "+")
 		result = eval(operand1)+eval(operand2); 
-	else if(operator == "-")
+	if(operator == "-")
 		result = eval(operand1) - eval(operand2);
-	else if(operator == "*")
+	if(operator == "*")
 		result = eval(operand1) * eval(operand2);
-	else if(operator == "/")
+	if(operator == "/")
 		result = eval(operand1) / eval(operand2);
-	else
-		alert("Input error!");
 		alert(result);
-		}	
-		while(confirm(Continue?"));
+		}
+		while(confirm("Continue?"));
 </script>
 </html>
